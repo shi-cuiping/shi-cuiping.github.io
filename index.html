@@ -7,11 +7,15 @@
     <title>个人主页</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Times New Roman, Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f8f8;
             color: #333;
+        }
+        a {
+            color: blue;
+            text-decoration: none; /* 可选：移除下划线 */
         }
         .container {
             width: 80%;
@@ -60,6 +64,17 @@
             color: gray;
             margin-top: 40px;
         }
+        .center-text {
+            text-align: center;
+        }
+        .center-flex {
+            display: flex;
+            justify-content: center;
+            /* flex-wrap: wrap;  */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
     </style>
 </head>
 <body>
@@ -72,17 +87,25 @@
             <p>湖州师范学院 | 研究方向：智能信息处理、计算机视觉与人工智能、遥感图像分析及处理等</p>
         </div>
 
-        <div class="contact">
-            <p>Email: scp1980@126.com</p>
-            <p>
-                <a href="https://scholar.google.com">Google Scholar</a> |
-                <a href="https://github.com/yourprofile">GitHub</a> |
-                <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
+        <div >
+            <p class="center-text">Email: scp1980@126.com</p> <br>
+            <p class="center-text">
+                <a href="#main_honor">主要荣誉</a> |
+                <a href="#main_achieve">主要成果</a> |
+                <a href="#thesis">论文专著</a>
+                <a href="#project">科研项目</a>
             </p>
         </div>
 
         <div class="section">
-            <h3>主要荣誉</h3>
+            <h3 id="main_honor">个人简介</h3>
+            <p>石翠萍，女，工学博士，教授、博士生导师。2004年获东北石油大学工学学士学位，2007年获扬州大学工学硕士学位，2016年获哈尔滨工业大学工学博士学位，博士论文获哈尔滨工业大学“校第十九届优秀博士学位论文”提名，2020年在哈尔滨工程大学信息与通信工程博士后流动站出站（出站成绩为“优秀”）。省一流专业带头人，市高层次人才“领军人才”，省高层次人才，国家自然科学基金涵评专家。主要从事遥感图像分析及处理，以及机器学习与人工智能的研究工作。<br>
+
+                近五年，主持及参加国家自然科学基金项目、国家863项目、以及其他省部级项目十余项，主持项目部分结题成果被鉴定为“国内领先水平”；在IEEE TGRS、IEEE JSTARS、NEUROCOMPUTING、REMOTE SENSING、IJRS等国内外学术期刊上共发表论文80余篇；出版学术专著1部，（该专著2021年被评为“省精品书”），参与翻译译著《Satellite Data Compression》、《Remote Sensing Digital Image Analysis: An Introduction》（Fifth Edition）共两部；申请发明专利30余项，作为第一发明人已授权发明专利14项；带领学生团队荣获“华为杯”中国智能设计竞赛获国家三等奖2项，省奖项9项；获全国高等学校计算机教育研究会“优秀指导教师”称号。</p>
+        </div>
+
+        <div class="section">
+            <h3 id="main_honor">主要荣誉</h3>
             <ul>
                 <li>省一流专业带头人</li>
                 <li>市高层次人才“领军人才”</li>
@@ -91,7 +114,7 @@
         </div>
 
         <div class="section">
-            <h3>主要成果</h3>
+            <h3 id="main_achieve">主要成果</h3>
             <ul>
                 <li>主持国家自然科学基金项目2项、国家博士后科学基金1项、省博士后科学
                     基金1项、省自然科学基金项目2项，市厅级科学基金7项</li>
@@ -102,9 +125,9 @@
         </div>
 
         <div class="section">
-            <h3>论文专著</h3>
+            <h3 id="thesis">论文专著</h3>
             <ul >
-                <li>A Positive Feedback Spatial-Spectral Correlation Network Based on Spectral
+                <li>Positive Feedback Spatial-Spectral Correlation Network Based on Spectral
                     Slice for Hyperspectral Image Classification. <strong>IEEE Transactions on Geoscience
                         and Remote Sensing</strong>, SCI, 2023 [<a href="#">PDF</a>]</li>
                 <li>Hyperspectral Image Classification Based on Expansion Convolution Network,
@@ -115,7 +138,7 @@
         </div>
 
         <div class="section">
-            <h3>科研项目</h3>
+            <h3 id="project">科研项目</h3>
             <ul >
                 <li>面向数据特性保持的高光谱影像高效压缩方法研究, 国家自然科学基金面上
                     项目,2023-2026 （主持，在研）</li>
